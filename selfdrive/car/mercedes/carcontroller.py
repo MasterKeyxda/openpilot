@@ -70,5 +70,5 @@ class CarController():
       self.es_lkas_cnt = CS.es_lkas_msg["Counter"]
 
     #can_sends.append(mercedescan.create_left_blinker(self.packer, CS.CP.car_fingerprint))
-    print(can_sends)
+    #print(can_sends)
     return can_sends
