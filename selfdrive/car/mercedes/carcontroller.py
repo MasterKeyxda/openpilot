@@ -39,8 +39,7 @@ class CarController():
     P = self.params
 
     # Send CAN commands.
-    can_sends2 = []
-    can_sends2.append(mercedescan.create_left_blinker(self.packer, CS.CP.car_fingerprint))
+    
     ### STEER ###
     can_sends = []
     if (frame % P.STEER_STEP) == 0:
@@ -70,4 +69,6 @@ class CarController():
       can_sends.append(mercedescan.create_es_lkas(self.packer, CS.es_lkas_msg, visual_alert, left_line, right_line))
       self.es_lkas_cnt = CS.es_lkas_msg["Counter"]
 
-    return can_sends2
+    can_sends.append(mercedescan.create_left_blinker(self.packer, CS.CP.car_fingerprint))
+    print(can_sends)
+    return can_sends
