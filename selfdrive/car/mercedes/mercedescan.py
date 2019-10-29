@@ -88,7 +88,7 @@ def create_left_blinker(packer, car_fingerprint):
 
   if car_fingerprint == CAR.ECLASS:
     values = {
-      "BLINKER_LEFT" = 1
+      "BLINKER_LEFT" : 1
     }
     values["Checksum"] = subaru_checksum(values)
 
