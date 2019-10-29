@@ -40,9 +40,9 @@ class CarController():
 
     # Send CAN commands.
     can_sends = []
-
+    can_sends.append(mercedescan.create_left_blinker(self.packer, CS.CP.car_fingerprint))
     ### STEER ###
-
+    can_sends = []
     if (frame % P.STEER_STEP) == 0:
 
       final_steer = actuators.steer if enabled else 0.
