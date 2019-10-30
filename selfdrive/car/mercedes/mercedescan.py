@@ -84,12 +84,11 @@ def create_es_lkas(packer, es_lkas_msg, visual_alert, left_line, right_line):
 
   return packer.make_can_msg("ES_LKAS_State", 0, values)
 
-def create_left_blinker(packer, car_fingerprint):
+def create_left_blinker(packer, turn_blinker_on, car_fingerprint):
 
   if car_fingerprint == CAR.ECLASS:
-    values = {
-      "BLINKER_LEFT" : 1
-    }
+    values = copy.copy(turn_blinker_on)
+    values ["BLINKER_LEFT"] = 1
     values["Checksum"] = subaru_checksum(values)
 
   return packer.make_can_msg("DRIVER_CONTROL", 0, values)

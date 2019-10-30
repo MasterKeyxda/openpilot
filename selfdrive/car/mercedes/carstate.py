@@ -160,3 +160,4 @@ class CarState():
 
     self.es_distance_msg = copy.copy(cp_cam.vl["ES_Distance"])
     self.es_lkas_msg = copy.copy(cp_cam.vl["ES_LKAS_State"])
+    self.turn_blinker_on = copy.copy(cp.vl["DRIVER_CONTROL"]) #Added by keyur
