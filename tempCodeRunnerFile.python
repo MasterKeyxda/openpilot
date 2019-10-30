@@ -1,0 +1,32 @@
+def subaru_checksum(data):
+  checksum = 0xFF
+  temp_chk = 0
+  bit_sum = 0
+
+  for byte in data:
+    shift = 0x80
+    for i in range(8, 0, -1):
+      bit_sum = byte & shift
+      temp_chk = checksum & 0x80
+      if bit_sum != 0:
+        bit_sum = 0x1C
+        if (temp_chk != 0):
+          bit_sum = 1
+        checksum = checksum << 1
+        temp_chk = checksum | 1
+        bit_sum ^= temp_chk
+      else:
+        if temp_chk != 0:
+          bit_sum = 0x1D
+        checksum = checksum << 1
+        bit_sum ^= checksum
+      checksum = bit_sum
+      shift = shift >> 1
+  return ~checksum & 0xFF
+
+import binascii
+
+
+data = binascii.a2b_hex('4202')
+checksum = subaru_checksum(data)
+print(checksum)
