@@ -33,6 +33,7 @@ def get_powertrain_can_parser(CP):
     ("REAR_PASSENGER_DRIVER", "DOORS", 1),
     ("REAR_PASSENGER_PASSENGER", "DOORS", 1),
     ("Units", "Dash_State", 1),
+    ("CRUISE_ON", "CRUISE_CONTROL", 0)
   ]
 
   checks = [
@@ -42,6 +43,7 @@ def get_powertrain_can_parser(CP):
     ("WHEEL_SPEED", 50),
     ("STEERING_1", 50),
     ("DOORS", 10),
+    ("CRUISE_CONTROL", 10),
   ]
 
   return CANParser(DBC[CP.carFingerprint]['pt'], signals, checks, 0)
@@ -147,8 +149,8 @@ class CarState():
     self.right_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_RIGHT'] == 1
     self.seatbelt_unlatched = cp.vl["Dashlights"]['SEATBELT_FL'] == 1
     self.steer_torque_driver = cp.vl["STEER_TORQUE"]['STEER_TORQUE']
-    self.acc_active = cp.vl["CRUISE_CONTROL3"]['CRUISE_ENABLED']
-    self.main_on = cp.vl["CRUISE_CONTROL3"]['CRUISE_ENABLED']
+    self.acc_active = cp.vl["CRUISE_CONTROL"]['CRUISE_ON']
+    self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON']
     self.steer_override = abs(self.steer_torque_driver) > STEER_THRESHOLD[self.car_fingerprint]
     self.angle_steers = cp.vl["STEERING_2"]['STEER_ANGLE']
     self.door_open = any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
