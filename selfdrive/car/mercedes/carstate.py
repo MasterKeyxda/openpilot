@@ -147,10 +147,10 @@ class CarState():
     self.prev_right_blinker_on = self.right_blinker_on
     self.left_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_LEFT'] == 1
     self.right_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_RIGHT'] == 1
-    self.seatbelt_unlatched = cp.vl["Dashlights"]['SEATBELT_FL'] == 1
+    self.seatbelt_unlatched = cp.vl["Dashlights"]['SEATBELT_FL'] == 0 #true if the bit value is 0
     self.steer_torque_driver = cp.vl["STEER_TORQUE"]['STEER_TORQUE']
-    self.acc_active = cp.vl["CRUISE_CONTROL"]['CRUISE_ON']
-    self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON']
+    self.acc_active = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] == 1 # Check with the bit value, true if 1
+    self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] == 1 # Check with the bit value, true if 1
     self.steer_override = abs(self.steer_torque_driver) > STEER_THRESHOLD[self.car_fingerprint]
     self.angle_steers = cp.vl["STEERING_2"]['STEER_ANGLE']
     self.door_open = any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
@@ -160,4 +160,4 @@ class CarState():
 
     self.es_distance_msg = copy.copy(cp_cam.vl["ES_Distance"])
     self.es_lkas_msg = copy.copy(cp_cam.vl["ES_LKAS_State"])
-    self.turn_blinker_on = copy.copy(cp.vl["DRIVER_CONTROL"]) #Added by keyur
+    #self.turn_blinker_on = copy.copy(cp.vl["DRIVER_CONTROL"]) #Added by keyur
