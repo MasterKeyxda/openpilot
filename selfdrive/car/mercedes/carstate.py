@@ -149,8 +149,8 @@ class CarState():
     self.right_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_RIGHT'] == 1
     self.seatbelt_unlatched = cp.vl["SEATBELT"]['DRIVER_BELTs'] == 1 #true if the bit value is 1
     self.steer_torque_driver = cp.vl["STEER_TORQUE"]['STEER_TORQUE']
-    self.acc_active = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] == 1 # Check with the bit value, true if 1
-    self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] == 1 # Check with the bit value, true if 1
+    self.acc_active = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] # Check with the bit value, true if 1
+    self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] # Check with the bit value, true if 1
     self.steer_override = abs(self.steer_torque_driver) > STEER_THRESHOLD[self.car_fingerprint]
     self.angle_steers = cp.vl["STEERING_2"]['STEER_ANGLE']
     self.door_open = any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
