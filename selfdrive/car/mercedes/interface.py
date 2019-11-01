@@ -43,8 +43,8 @@ class CarInterface(CarInterfaceBase):
     ret.carFingerprint = candidate
     ret.carVin = vin
     ret.isPandaBlack = has_relay
-    ret.safetyModel = car.CarParams.SafetyModel.subaru
-    ret.SafetyModel = car.CarParams.safetyModel.subaru
+    ret.safetyModel = car.CarParams.SafetyModel.allOutput
+    ret.SafetyModel = car.CarParams.safetyModel.allOutput
 
     ret.enableCruise = True
     ret.steerLimitAlert = True
