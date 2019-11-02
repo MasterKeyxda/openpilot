@@ -39,7 +39,7 @@ def subaru_checksum(data):
 
 def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_step):
 
-  if car_fingerprint == CAR.ECLASS:
+  if car_fingerprint == CAR.IMPREZA:
     #counts from 0 to 15 then back to 0 + 16 for enable bit
     idx = ((frame // steer_step) % 16)
 
@@ -55,7 +55,7 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
 
 def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_step):
 
-  if car_fingerprint == CAR.ECLASS:
+  if car_fingerprint == CAR.IMPREZA:
     values = {}
     values["Checksum"] = subaru_checksum(0x322)
 
@@ -86,7 +86,7 @@ def create_es_lkas(packer, es_lkas_msg, visual_alert, left_line, right_line):
 
 def create_left_blinker(packer, turn_blinker_on, car_fingerprint):
 
-  if car_fingerprint == CAR.ECLASS:
+  if car_fingerprint == CAR.IMPREZA:
     values = copy.copy(turn_blinker_on)
     values ["BLINKER_LEFT"] = 1
     values["Checksum"] = subaru_checksum(values)
