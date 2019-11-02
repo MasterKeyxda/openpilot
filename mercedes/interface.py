@@ -3,8 +3,8 @@ from cereal import car
 from selfdrive.config import Conversions as CV
 from selfdrive.controls.lib.drive_helpers import create_event, EventTypes as ET
 from selfdrive.controls.lib.vehicle_model import VehicleModel
-from selfdrive.car.subaru.values import CAR
-from selfdrive.car.subaru.carstate import CarState, get_powertrain_can_parser, get_camera_can_parser
+from selfdrive.car.mercedes.values import CAR
+from selfdrive.car.mercedes.carstate import CarState, get_powertrain_can_parser, get_camera_can_parser
 from selfdrive.car import STD_CARGO_KG, scale_rot_inertia, scale_tire_stiffness, gen_empty_fingerprint
 from selfdrive.car.interfaces import CarInterfaceBase
 
@@ -38,12 +38,13 @@ class CarInterface(CarInterfaceBase):
   def get_params(candidate, fingerprint=gen_empty_fingerprint(), vin="", has_relay=False):
     ret = car.CarParams.new_message()
 
-    ret.carName = "subaru"
+    ret.carName = "mercedes"
     ret.radarOffCan = True
     ret.carFingerprint = candidate
     ret.carVin = vin
     ret.isPandaBlack = has_relay
-    ret.safetyModel = car.CarParams.SafetyModel.subaru
+    ret.safetyModel = car.CarParams.SafetyModel.allOutput
+    ret.SafetyModel = car.CarParams.safetyModel.allOutput
 
     ret.enableCruise = True
     ret.steerLimitAlert = True

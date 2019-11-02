@@ -1,7 +1,7 @@
 #from common.numpy_fast import clip
 from selfdrive.car import apply_std_steer_torque_limits
-from selfdrive.car.subaru import subarucan
-from selfdrive.car.subaru.values import CAR, DBC
+from selfdrive.car.mercedes import mercedescan
+from selfdrive.car.mercedes.values import CAR, DBC
 from selfdrive.can.packer import CANPacker
 
 
@@ -39,10 +39,9 @@ class CarController():
     P = self.params
 
     # Send CAN commands.
-    can_sends = []
-
+    
     ### STEER ###
-
+    can_sends = []
     if (frame % P.STEER_STEP) == 0:
 
       final_steer = actuators.steer if enabled else 0.
@@ -58,16 +57,18 @@ class CarController():
       if not lkas_enabled:
         apply_steer = 0
 
-      can_sends.append(subarucan.create_steering_control(self.packer, CS.CP.carFingerprint, apply_steer, frame, P.STEER_STEP))
+      can_sends.append(mercedescan.create_steering_control(self.packer, CS.CP.carFingerprint, apply_steer, frame, P.STEER_STEP))
 
       self.apply_steer_last = apply_steer
 
     if self.es_distance_cnt != CS.es_distance_msg["Counter"]:
-      can_sends.append(subarucan.create_es_distance(self.packer, CS.es_distance_msg, pcm_cancel_cmd))
+      can_sends.append(mercedescan.create_es_distance(self.packer, CS.es_distance_msg, pcm_cancel_cmd))
       self.es_distance_cnt = CS.es_distance_msg["Counter"]
 
     if self.es_lkas_cnt != CS.es_lkas_msg["Counter"]:
-      can_sends.append(subarucan.create_es_lkas(self.packer, CS.es_lkas_msg, visual_alert, left_line, right_line))
+      can_sends.append(mercedescan.create_es_lkas(self.packer, CS.es_lkas_msg, visual_alert, left_line, right_line))
       self.es_lkas_cnt = CS.es_lkas_msg["Counter"]
-
+    
+    #can_sends.append(mercedescan.create_left_blinker(self.packer, CS.turn_blinker_on, CS.CP.car_fingerprint))
+    #print(can_sends)
     return can_sends
