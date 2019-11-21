@@ -10233,15 +10233,9 @@ const Msg msgs[] = {
 
 const Val vals[] = {
     {
-      .name = "CAN_RX_STEERING_ANGLE_SIGN",
+      .name = "CAN_RX_STEERING_ANGLE_RATE_SIGN",
       .address = 0x4F0,
       .def_val = "1 RIGHT_CLOCKWISE 0 LEFT_COUNTERCLOCKWISE",
-      .sigs = sigs_1264,
-    },
-    {
-      .name = "CAN_RX_STEERING_VALIDITY",
-      .address = 0x4F0,
-      .def_val = "1 TRUE 0 FALSE",
       .sigs = sigs_1264,
     },
     {
@@ -10251,15 +10245,21 @@ const Val vals[] = {
       .sigs = sigs_1264,
     },
     {
-      .name = "CAN_RX_YAW_RATE_VALIDITY",
+      .name = "CAN_RX_STEERING_VALIDITY",
       .address = 0x4F0,
-      .def_val = "1 VALID 0 INVALID",
+      .def_val = "1 TRUE 0 FALSE",
       .sigs = sigs_1264,
     },
     {
-      .name = "CAN_RX_STEERING_ANGLE_RATE_SIGN",
+      .name = "CAN_RX_STEERING_ANGLE_SIGN",
       .address = 0x4F0,
       .def_val = "1 RIGHT_CLOCKWISE 0 LEFT_COUNTERCLOCKWISE",
+      .sigs = sigs_1264,
+    },
+    {
+      .name = "CAN_RX_YAW_RATE_VALIDITY",
+      .address = 0x4F0,
+      .def_val = "1 VALID 0 INVALID",
       .sigs = sigs_1264,
     },
 };

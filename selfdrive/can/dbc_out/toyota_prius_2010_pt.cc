@@ -1147,6 +1147,12 @@ const Val vals[] = {
       .sigs = sigs_1042,
     },
     {
+      .name = "LEFT_LINE",
+      .address = 0x412,
+      .def_val = "3 ORANGE 2 DOUBLE 1 SOLID 0 NONE",
+      .sigs = sigs_1042,
+    },
+    {
       .name = "BARRIERS",
       .address = 0x412,
       .def_val = "3 BOTH 2 RIGHT 1 LEFT 0 NONE",
@@ -1154,12 +1160,6 @@ const Val vals[] = {
     },
     {
       .name = "RIGHT_LINE",
-      .address = 0x412,
-      .def_val = "3 ORANGE 2 DOUBLE 1 SOLID 0 NONE",
-      .sigs = sigs_1042,
-    },
-    {
-      .name = "LEFT_LINE",
       .address = 0x412,
       .def_val = "3 ORANGE 2 DOUBLE 1 SOLID 0 NONE",
       .sigs = sigs_1042,

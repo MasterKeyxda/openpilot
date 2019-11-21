@@ -2238,12 +2238,6 @@ const Val vals[] = {
       .sigs = sigs_419,
     },
     {
-      .name = "CRUISE_SETTING",
-      .address = 0x1A6,
-      .def_val = "3 DISTANCE_ADJ 2 TBD 1 LKAS_BUTTON 0 NONE",
-      .sigs = sigs_422,
-    },
-    {
       .name = "CRUISE_BUTTONS",
       .address = 0x1A6,
       .def_val = "7 TBD 6 TBD 5 TBD 4 ACCEL_RES 3 DECEL_SET 2 CANCEL 1 MAIN 0 NONE",
@@ -2253,6 +2247,12 @@ const Val vals[] = {
       .name = "LIGHTS_SETTING",
       .address = 0x1A6,
       .def_val = "3 HIGH_BEAM 2 LOW_BEAM 1 POSITION 0 NO_LIGHTS",
+      .sigs = sigs_422,
+    },
+    {
+      .name = "CRUISE_SETTING",
+      .address = 0x1A6,
+      .def_val = "3 DISTANCE_ADJ 2 TBD 1 LKAS_BUTTON 0 NONE",
       .sigs = sigs_422,
     },
     {
@@ -2280,15 +2280,15 @@ const Val vals[] = {
       .sigs = sigs_513,
     },
     {
-      .name = "HUD_LEAD",
-      .address = 0x30C,
-      .def_val = "3 ACC_OFF 2 SOLID_CAR 1 DASHED_CAR 0 NO_CAR",
-      .sigs = sigs_780,
-    },
-    {
       .name = "CRUISE_SPEED",
       .address = 0x30C,
       .def_val = "255 NO_SPEED 252 STOPPED",
+      .sigs = sigs_780,
+    },
+    {
+      .name = "HUD_LEAD",
+      .address = 0x30C,
+      .def_val = "3 ACC_OFF 2 SOLID_CAR 1 DASHED_CAR 0 NO_CAR",
       .sigs = sigs_780,
     },
     {
