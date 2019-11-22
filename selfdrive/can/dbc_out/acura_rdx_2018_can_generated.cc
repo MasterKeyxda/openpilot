@@ -2272,15 +2272,15 @@ const Msg msgs[] = {
 
 const Val vals[] = {
     {
-      .name = "GEAR_SHIFTER",
-      .address = 0x188,
-      .def_val = "0 S 1 P 2 R 4 N 8 D",
-      .sigs = sigs_392,
-    },
-    {
       .name = "GEAR",
       .address = 0x188,
       .def_val = "26 S 4 D 3 N 2 R 1 P",
+      .sigs = sigs_392,
+    },
+    {
+      .name = "GEAR_SHIFTER",
+      .address = 0x188,
+      .def_val = "0 S 1 P 2 R 4 N 8 D",
       .sigs = sigs_392,
     },
     {
@@ -2320,15 +2320,15 @@ const Val vals[] = {
       .sigs = sigs_513,
     },
     {
-      .name = "HUD_LEAD",
-      .address = 0x30C,
-      .def_val = "3 ACC_OFF 2 SOLID_CAR 1 DASHED_CAR 0 NO_CAR",
-      .sigs = sigs_780,
-    },
-    {
       .name = "CRUISE_SPEED",
       .address = 0x30C,
       .def_val = "255 NO_SPEED 252 STOPPED",
+      .sigs = sigs_780,
+    },
+    {
+      .name = "HUD_LEAD",
+      .address = 0x30C,
+      .def_val = "3 ACC_OFF 2 SOLID_CAR 1 DASHED_CAR 0 NO_CAR",
       .sigs = sigs_780,
     },
     {

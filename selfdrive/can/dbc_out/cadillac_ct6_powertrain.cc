@@ -1113,15 +1113,15 @@ const Val vals[] = {
       .sigs = sigs_309,
     },
     {
-      .name = "LKASMode",
-      .address = 0x152,
-      .def_val = "2 SUPERCRUISE 1 LKAS 0 INACTIVE",
-      .sigs = sigs_338,
-    },
-    {
       .name = "LKASteeringCmdActive",
       .address = 0x152,
       .def_val = "1 ACTIVE 0 INACTIVE",
+      .sigs = sigs_338,
+    },
+    {
+      .name = "LKASMode",
+      .address = 0x152,
+      .def_val = "2 SUPERCRUISE 1 LKAS 0 INACTIVE",
       .sigs = sigs_338,
     },
     {
@@ -1129,12 +1129,6 @@ const Val vals[] = {
       .address = 0x164,
       .def_val = "7 OVERRIDE_FAULT 6 LKAS_FAULT_BUT_RESPONSIVE 5 TBD_BUT_RESPONSIVE 4 TBD_BUT_RESPONSIVE 3 FAULT 1 ACTIVE 0 INACTIVE",
       .sigs = sigs_356,
-    },
-    {
-      .name = "ACCButtons",
-      .address = 0x1E1,
-      .def_val = "6 CANCEL 5 MAIN 3 SET 2 RESUME 1 NONE",
-      .sigs = sigs_481,
     },
     {
       .name = "DistanceButton",
@@ -1146,6 +1140,12 @@ const Val vals[] = {
       .name = "LKAButton",
       .address = 0x1E1,
       .def_val = "1 ACTIVE 0 INACTIVE",
+      .sigs = sigs_481,
+    },
+    {
+      .name = "ACCButtons",
+      .address = 0x1E1,
+      .def_val = "6 CANCEL 5 MAIN 3 SET 2 RESUME 1 NONE",
       .sigs = sigs_481,
     },
     {
@@ -1167,18 +1167,6 @@ const Val vals[] = {
       .sigs = sigs_715,
     },
     {
-      .name = "ACCResumeButton",
-      .address = 0x370,
-      .def_val = "1 PRESSED 0 DEPRESSED",
-      .sigs = sigs_880,
-    },
-    {
-      .name = "ACCCmdActive",
-      .address = 0x370,
-      .def_val = "1 ACTIVE 0 INACTIVE",
-      .sigs = sigs_880,
-    },
-    {
       .name = "ACCLeadCar",
       .address = 0x370,
       .def_val = "1 PRESENT 0 NOT_PRESENT",
@@ -1188,6 +1176,18 @@ const Val vals[] = {
       .name = "ACCGapLevel",
       .address = 0x370,
       .def_val = "3 FAR 2 MED 1 NEAR 0 INACTIVE",
+      .sigs = sigs_880,
+    },
+    {
+      .name = "ACCCmdActive",
+      .address = 0x370,
+      .def_val = "1 ACTIVE 0 INACTIVE",
+      .sigs = sigs_880,
+    },
+    {
+      .name = "ACCResumeButton",
+      .address = 0x370,
+      .def_val = "1 PRESSED 0 DEPRESSED",
       .sigs = sigs_880,
     },
 };
