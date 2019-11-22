@@ -207,15 +207,15 @@ const Msg msgs[] = {
 
 const Val vals[] = {
     {
-      .name = "CruiseEnabled",
-      .address = 0x144,
-      .def_val = "1 ON 0 OFF",
-      .sigs = sigs_324,
-    },
-    {
       .name = "CruiseButtons",
       .address = 0x144,
       .def_val = "2 SET 1 RESUME",
+      .sigs = sigs_324,
+    },
+    {
+      .name = "CruiseEnabled",
+      .address = 0x144,
+      .def_val = "1 ON 0 OFF",
       .sigs = sigs_324,
     },
     {

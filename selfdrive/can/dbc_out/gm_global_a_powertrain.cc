@@ -1152,7 +1152,7 @@ const Val vals[] = {
       .sigs = sigs_309,
     },
     {
-      .name = "HighBeamsTemporary",
+      .name = "Intellibeam",
       .address = 0x140,
       .def_val = "1 ACTIVE 0 INACTIVE",
       .sigs = sigs_320,
@@ -1164,7 +1164,7 @@ const Val vals[] = {
       .sigs = sigs_320,
     },
     {
-      .name = "Intellibeam",
+      .name = "HighBeamsTemporary",
       .address = 0x140,
       .def_val = "1 ACTIVE 0 INACTIVE",
       .sigs = sigs_320,
@@ -1174,6 +1174,12 @@ const Val vals[] = {
       .address = 0x180,
       .def_val = "1 ACTIVE 0 INACTIVE",
       .sigs = sigs_384,
+    },
+    {
+      .name = "HandsOffSWDetectionMode",
+      .address = 0x184,
+      .def_val = "2 FAILED 1 ENABLED 0 DISABLED",
+      .sigs = sigs_388,
     },
     {
       .name = "HandsOffSWlDetectionStatus",
@@ -1188,16 +1194,16 @@ const Val vals[] = {
       .sigs = sigs_388,
     },
     {
-      .name = "HandsOffSWDetectionMode",
-      .address = 0x184,
-      .def_val = "2 FAILED 1 ENABLED 0 DISABLED",
-      .sigs = sigs_388,
-    },
-    {
       .name = "CruiseState",
       .address = 0x1C4,
       .def_val = "4 STANDSTILL 3 FAULTED 1 ACTIVE 0 OFF",
       .sigs = sigs_452,
+    },
+    {
+      .name = "ACCButtons",
+      .address = 0x1E1,
+      .def_val = "6 CANCEL 5 MAIN 3 SET 2 RESUME 1 NONE",
+      .sigs = sigs_481,
     },
     {
       .name = "DistanceButton",
@@ -1215,12 +1221,6 @@ const Val vals[] = {
       .name = "LKAButton",
       .address = 0x1E1,
       .def_val = "1 ACTIVE 0 INACTIVE",
-      .sigs = sigs_481,
-    },
-    {
-      .name = "ACCButtons",
-      .address = 0x1E1,
-      .def_val = "6 CANCEL 5 MAIN 3 SET 2 RESUME 1 NONE",
       .sigs = sigs_481,
     },
     {
@@ -1242,15 +1242,9 @@ const Val vals[] = {
       .sigs = sigs_715,
     },
     {
-      .name = "ACCLeadCar",
+      .name = "ACCResumeButton",
       .address = 0x370,
-      .def_val = "1 PRESENT 0 NOT_PRESENT",
-      .sigs = sigs_880,
-    },
-    {
-      .name = "ACCGapLevel",
-      .address = 0x370,
-      .def_val = "3 FAR 2 MED 1 NEAR 0 INACTIVE",
+      .def_val = "1 PRESSED 0 DEPRESSED",
       .sigs = sigs_880,
     },
     {
@@ -1260,9 +1254,15 @@ const Val vals[] = {
       .sigs = sigs_880,
     },
     {
-      .name = "ACCResumeButton",
+      .name = "ACCLeadCar",
       .address = 0x370,
-      .def_val = "1 PRESSED 0 DEPRESSED",
+      .def_val = "1 PRESENT 0 NOT_PRESENT",
+      .sigs = sigs_880,
+    },
+    {
+      .name = "ACCGapLevel",
+      .address = 0x370,
+      .def_val = "3 FAR 2 MED 1 NEAR 0 INACTIVE",
       .sigs = sigs_880,
     },
 };

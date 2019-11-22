@@ -317,15 +317,15 @@ const Msg msgs[] = {
 
 const Val vals[] = {
     {
-      .name = "LKASteeringCmdActive",
-      .address = 0x152,
-      .def_val = "1 ACTIVE 0 INACTIVE",
-      .sigs = sigs_338,
-    },
-    {
       .name = "LKASMode",
       .address = 0x152,
       .def_val = "2 SUPERCRUISE 1 LKAS 0 INACTIVE",
+      .sigs = sigs_338,
+    },
+    {
+      .name = "LKASteeringCmdActive",
+      .address = 0x152,
+      .def_val = "1 ACTIVE 0 INACTIVE",
       .sigs = sigs_338,
     },
 };

@@ -2647,15 +2647,15 @@ const Val vals[] = {
       .sigs = sigs_513,
     },
     {
-      .name = "LKA_STATE",
-      .address = 0x262,
-      .def_val = "25 TEMPORARY_FAULT 9 TEMPORARY_FAULT2 5 ACTIVE 1 STANDBY",
-      .sigs = sigs_610,
-    },
-    {
       .name = "IPAS_STATE",
       .address = 0x262,
       .def_val = "5 OVERRIDE 3 ENABLED 1 DISABLED",
+      .sigs = sigs_610,
+    },
+    {
+      .name = "LKA_STATE",
+      .address = 0x262,
+      .def_val = "25 TEMPORARY_FAULT 9 TEMPORARY_FAULT2 5 ACTIVE 1 STANDBY",
       .sigs = sigs_610,
     },
     {
@@ -2683,18 +2683,6 @@ const Val vals[] = {
       .sigs = sigs_921,
     },
     {
-      .name = "LDA_ALERT",
-      .address = 0x412,
-      .def_val = "3 HOLD_WITH_CONTINUOUS_BEEP 2 LDA_UNAVAILABLE 1 HOLD 0 NONE",
-      .sigs = sigs_1042,
-    },
-    {
-      .name = "BARRIERS",
-      .address = 0x412,
-      .def_val = "3 BOTH 2 RIGHT 1 LEFT 0 NONE",
-      .sigs = sigs_1042,
-    },
-    {
       .name = "RIGHT_LINE",
       .address = 0x412,
       .def_val = "3 ORANGE 2 FADED 1 SOLID 0 NONE",
@@ -2704,6 +2692,18 @@ const Val vals[] = {
       .name = "LEFT_LINE",
       .address = 0x412,
       .def_val = "3 ORANGE 2 FADED 1 SOLID 0 NONE",
+      .sigs = sigs_1042,
+    },
+    {
+      .name = "BARRIERS",
+      .address = 0x412,
+      .def_val = "3 BOTH 2 RIGHT 1 LEFT 0 NONE",
+      .sigs = sigs_1042,
+    },
+    {
+      .name = "LDA_ALERT",
+      .address = 0x412,
+      .def_val = "3 HOLD_WITH_CONTINUOUS_BEEP 2 LDA_UNAVAILABLE 1 HOLD 0 NONE",
       .sigs = sigs_1042,
     },
     {
@@ -2725,15 +2725,15 @@ const Val vals[] = {
       .sigs = sigs_1161,
     },
     {
-      .name = "TSGN3",
-      .address = 0x48A,
-      .def_val = "0 NONE 1 SPEED_SIGN 2 0_UNLIMITED 7 UNLIMITED 16 HIGHWAY 17 NO_HIGHWAY 18 MOTORWAY 19 NO_MOTORWAY 20 IN_CITY 21 OUTSIDE_CITY 22 PEDESTRIAN_AREA 23 NO_PEDESTRIAN_AREA 65 NO_OVERTAKING_LEFT 66 NO_OVERTAKING_RIGHT 67 OVERTAKING_ALLOWED_AGAIN 129 NO_ENTRY",
-      .sigs = sigs_1162,
-    },
-    {
       .name = "SPLSGN3",
       .address = 0x48A,
       .def_val = "15 CONDITIONAL_BLANK 4 WET_ROAD 5 RAIN 0 NONE",
+      .sigs = sigs_1162,
+    },
+    {
+      .name = "TSGN3",
+      .address = 0x48A,
+      .def_val = "0 NONE 1 SPEED_SIGN 2 0_UNLIMITED 7 UNLIMITED 16 HIGHWAY 17 NO_HIGHWAY 18 MOTORWAY 19 NO_MOTORWAY 20 IN_CITY 21 OUTSIDE_CITY 22 PEDESTRIAN_AREA 23 NO_PEDESTRIAN_AREA 65 NO_OVERTAKING_LEFT 66 NO_OVERTAKING_RIGHT 67 OVERTAKING_ALLOWED_AGAIN 129 NO_ENTRY",
       .sigs = sigs_1162,
     },
     {

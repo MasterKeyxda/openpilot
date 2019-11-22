@@ -139,8 +139,6 @@ pyflakes = "*"
 pylint = "*"
 pycryptodome = "*"
 pillow = "*"
-python = "*"
-3-5 = "*"
 
 [requires]
 python_version = "3.7.3"

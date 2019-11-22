@@ -390,13 +390,13 @@ const Val vals[] = {
       .sigs = sigs_270581760,
     },
     {
-      .name = "RightBlinker",
+      .name = "BlinkerLight",
       .address = 0x1020C000,
       .def_val = "1 ACTIVE 0 INACTIVE",
       .sigs = sigs_270581760,
     },
     {
-      .name = "BlinkerLight",
+      .name = "RightBlinker",
       .address = 0x1020C000,
       .def_val = "1 ACTIVE 0 INACTIVE",
       .sigs = sigs_270581760,

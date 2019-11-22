@@ -12251,12 +12251,6 @@ const Val vals[] = {
       .sigs = sigs_681,
     },
     {
-      .name = "Class",
-      .address = 0x311,
-      .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_785,
-    },
-    {
       .name = "MovingState",
       .address = 0x311,
       .def_val = "3 RADAR_MOVESTATE_STANDING 2 RADAR_MOVESTATE_STOPPED 1 RADAR_MOVESTATE_MOVING 0 RADAR_MOVESTATE_INDETERMINATE",
@@ -12264,9 +12258,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x314,
+      .address = 0x311,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_788,
+      .sigs = sigs_785,
     },
     {
       .name = "MovingState",
@@ -12276,9 +12270,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x317,
+      .address = 0x314,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_791,
+      .sigs = sigs_788,
     },
     {
       .name = "MovingState",
@@ -12288,9 +12282,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x31A,
+      .address = 0x317,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_794,
+      .sigs = sigs_791,
     },
     {
       .name = "MovingState",
@@ -12300,9 +12294,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x31D,
+      .address = 0x31A,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_797,
+      .sigs = sigs_794,
     },
     {
       .name = "MovingState",
@@ -12312,9 +12306,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x320,
+      .address = 0x31D,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_800,
+      .sigs = sigs_797,
     },
     {
       .name = "MovingState",
@@ -12324,9 +12318,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x323,
+      .address = 0x320,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_803,
+      .sigs = sigs_800,
     },
     {
       .name = "MovingState",
@@ -12336,9 +12330,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x326,
+      .address = 0x323,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_806,
+      .sigs = sigs_803,
     },
     {
       .name = "MovingState",
@@ -12348,9 +12342,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x329,
+      .address = 0x326,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_809,
+      .sigs = sigs_806,
     },
     {
       .name = "MovingState",
@@ -12360,9 +12354,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x32C,
+      .address = 0x329,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_812,
+      .sigs = sigs_809,
     },
     {
       .name = "MovingState",
@@ -12372,9 +12366,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x32F,
+      .address = 0x32C,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_815,
+      .sigs = sigs_812,
     },
     {
       .name = "MovingState",
@@ -12384,9 +12378,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x332,
+      .address = 0x32F,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_818,
+      .sigs = sigs_815,
     },
     {
       .name = "MovingState",
@@ -12396,9 +12390,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x335,
+      .address = 0x332,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_821,
+      .sigs = sigs_818,
     },
     {
       .name = "MovingState",
@@ -12408,9 +12402,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x338,
+      .address = 0x335,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_824,
+      .sigs = sigs_821,
     },
     {
       .name = "MovingState",
@@ -12420,9 +12414,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x33B,
+      .address = 0x338,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_827,
+      .sigs = sigs_824,
     },
     {
       .name = "MovingState",
@@ -12432,9 +12426,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x33E,
+      .address = 0x33B,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_830,
+      .sigs = sigs_827,
     },
     {
       .name = "MovingState",
@@ -12444,9 +12438,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x341,
+      .address = 0x33E,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_833,
+      .sigs = sigs_830,
     },
     {
       .name = "MovingState",
@@ -12456,9 +12450,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x344,
+      .address = 0x341,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_836,
+      .sigs = sigs_833,
     },
     {
       .name = "MovingState",
@@ -12468,9 +12462,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x347,
+      .address = 0x344,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_839,
+      .sigs = sigs_836,
     },
     {
       .name = "MovingState",
@@ -12480,9 +12474,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x34A,
+      .address = 0x347,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_842,
+      .sigs = sigs_839,
     },
     {
       .name = "MovingState",
@@ -12492,9 +12486,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x34D,
+      .address = 0x34A,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_845,
+      .sigs = sigs_842,
     },
     {
       .name = "MovingState",
@@ -12504,9 +12498,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x350,
+      .address = 0x34D,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_848,
+      .sigs = sigs_845,
     },
     {
       .name = "MovingState",
@@ -12516,9 +12510,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x353,
+      .address = 0x350,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_851,
+      .sigs = sigs_848,
     },
     {
       .name = "MovingState",
@@ -12528,9 +12522,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x356,
+      .address = 0x353,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_854,
+      .sigs = sigs_851,
     },
     {
       .name = "MovingState",
@@ -12540,9 +12534,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x359,
+      .address = 0x356,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_857,
+      .sigs = sigs_854,
     },
     {
       .name = "MovingState",
@@ -12552,9 +12546,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x35C,
+      .address = 0x359,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_860,
+      .sigs = sigs_857,
     },
     {
       .name = "MovingState",
@@ -12564,9 +12558,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x35F,
+      .address = 0x35C,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_863,
+      .sigs = sigs_860,
     },
     {
       .name = "MovingState",
@@ -12576,9 +12570,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x362,
+      .address = 0x35F,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_866,
+      .sigs = sigs_863,
     },
     {
       .name = "MovingState",
@@ -12588,9 +12582,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x365,
+      .address = 0x362,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_869,
+      .sigs = sigs_866,
     },
     {
       .name = "MovingState",
@@ -12600,9 +12594,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x368,
+      .address = 0x365,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_872,
+      .sigs = sigs_869,
     },
     {
       .name = "MovingState",
@@ -12612,9 +12606,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x36B,
+      .address = 0x368,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_875,
+      .sigs = sigs_872,
     },
     {
       .name = "MovingState",
@@ -12624,9 +12618,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x36E,
+      .address = 0x36B,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_878,
+      .sigs = sigs_875,
     },
     {
       .name = "MovingState",
@@ -12636,9 +12630,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x372,
+      .address = 0x36E,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_882,
+      .sigs = sigs_878,
     },
     {
       .name = "MovingState",
@@ -12648,9 +12642,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x375,
+      .address = 0x372,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_885,
+      .sigs = sigs_882,
     },
     {
       .name = "MovingState",
@@ -12660,9 +12654,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x378,
+      .address = 0x375,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_888,
+      .sigs = sigs_885,
     },
     {
       .name = "MovingState",
@@ -12672,9 +12666,9 @@ const Val vals[] = {
     },
     {
       .name = "Class",
-      .address = 0x37B,
+      .address = 0x378,
       .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
-      .sigs = sigs_891,
+      .sigs = sigs_888,
     },
     {
       .name = "MovingState",
@@ -12684,14 +12678,20 @@ const Val vals[] = {
     },
     {
       .name = "Class",
+      .address = 0x37B,
+      .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
+      .sigs = sigs_891,
+    },
+    {
+      .name = "MovingState",
       .address = 0x37E,
-      .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
+      .def_val = "3 RADAR_MOVESTATE_STANDING 2 RADAR_MOVESTATE_STOPPED 1 RADAR_MOVESTATE_MOVING 0 RADAR_MOVESTATE_INDETERMINATE",
       .sigs = sigs_894,
     },
     {
-      .name = "MovingState",
+      .name = "Class",
       .address = 0x37E,
-      .def_val = "3 RADAR_MOVESTATE_STANDING 2 RADAR_MOVESTATE_STOPPED 1 RADAR_MOVESTATE_MOVING 0 RADAR_MOVESTATE_INDETERMINATE",
+      .def_val = "4 RADAR_CLASS_CONSTRUCTION_ELEMENT 3 RADAR_CLASS_MOVING_PEDESTRIAN 2 RADAR_CLASS_MOVING_TWO_WHEEL_VEHICLE 1 RADAR_CLASS_MOVING_FOUR_WHEEL_VEHICLE 0 RADAR_CLASS_UNKNOWN",
       .sigs = sigs_894,
     },
 };
