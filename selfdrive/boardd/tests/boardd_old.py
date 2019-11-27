@@ -134,6 +134,7 @@ def boardd_mock_loop():
     got_2 = len(list(filter(lambda x: x[-1] == 2+0x80, can_msgs)))
     print("sent %3d (%3d/%3d/%3d) got %3d (%3d/%3d/%3d)" %
       (len(snd), snd_0, snd_1, snd_2, len(can_msgs), got_0, got_1, got_2))
+    print(can_msgs)
     m = can_list_to_can_capnp(can_msgs, msgtype='sendcan')
     sendcan.send(m.to_bytes())
 
