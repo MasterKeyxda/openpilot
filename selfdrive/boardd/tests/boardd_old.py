@@ -36,6 +36,7 @@ def can_list_to_can_capnp(can_msgs, msgtype='can'):
     else:
       cc = dat.can[i]
     cc.address = can_msg[0]
+    #print(can_msg[0])
     cc.busTime = can_msg[1]
     cc.dat = bytes(can_msg[2])
     cc.src = can_msg[3]
