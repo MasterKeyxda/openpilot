@@ -36,6 +36,7 @@ def can_list_to_can_capnp(can_msgs, msgtype='can'):
     else:
       cc = dat.can[i]
     cc.address = can_msg[0]
+    #print(can_msg[0])
     cc.busTime = can_msg[1]
     cc.dat = bytes(can_msg[2])
     cc.src = can_msg[3]
@@ -133,6 +134,7 @@ def boardd_mock_loop():
     got_2 = len(list(filter(lambda x: x[-1] == 2+0x80, can_msgs)))
     print("sent %3d (%3d/%3d/%3d) got %3d (%3d/%3d/%3d)" %
       (len(snd), snd_0, snd_1, snd_2, len(can_msgs), got_0, got_1, got_2))
+    print(can_msgs)
     m = can_list_to_can_capnp(can_msgs, msgtype='sendcan')
     sendcan.send(m.to_bytes())
 
