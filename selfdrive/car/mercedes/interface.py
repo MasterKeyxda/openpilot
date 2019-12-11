@@ -44,7 +44,7 @@ class CarInterface(CarInterfaceBase):
     ret.carVin = vin
     ret.isPandaBlack = has_relay
     ret.safetyModel = car.CarParams.SafetyModel.subaru
-    ret.SafetyModel = car.CarParams.safetyModel.subaru
+    #ret.SafetyModel = car.CarParams.safetyModel.subaru
 
     ret.enableCruise = True
     ret.steerLimitAlert = True
