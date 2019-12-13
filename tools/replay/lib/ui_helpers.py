@@ -173,8 +173,13 @@ def init_plots(arr, name_to_arr_idx, plot_xlims, plot_ylims, plot_names, plot_co
       fig.canvas.flush_events()
 
     raw_data = renderer.tostring_rgb()
-    #print fig.canvas.get_width_height()
+    raw_data = raw_data[0:1344000]
+    print(len(raw_data))
+    print(np.size(raw_data))
+    print (fig.canvas.get_width_height())
+    #plot_surface = pygame.image.frombuffer(raw_data, fig.canvas.get_width_height(), "RGB").convert()
     plot_surface = pygame.image.frombuffer(raw_data, fig.canvas.get_width_height(), "RGB").convert()
+    #plot_surface = pygame.image.fromstring(raw_data, fig.canvas.get_width_height(), "RGB").convert()
     return plot_surface
 
   return draw_plots
