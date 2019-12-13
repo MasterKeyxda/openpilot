@@ -118,9 +118,7 @@ CANParser::CANParser(int abus, const std::string& dbc_name,
 
     const Msg* msg = NULL;
     for (int i=0; i<dbc->num_msgs; i++) {
-      std::cout << "WE ARE INSIDE THE FOR LOOP" << std::endl;
-      // fprintf('Inside FOR LOOP');
-      // fprintf('num_messages = %d',dbc->num_msgs);
+      std::cout << "WE ARE INSIDE THE FOR LOOP" << std::endl; // Keyur added debug lines
       if (dbc->msgs[i].address == op.address) {
         msg = &dbc->msgs[i];
         break;
