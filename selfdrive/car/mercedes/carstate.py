@@ -23,7 +23,7 @@ def get_powertrain_can_parser(CP):
     ("THROTTLE_POSITION", "THROTTLE_1_RPM", 0),
     ("BLINKER_LEFT", "DRIVER_CONTROL", 0),
     ("BLINKER_RIGHT", "DRIVER_CONTROL", 0),
-    ("SEATBELT_FL", "Dashlights", 0),
+    ("DRIVER_BELT", "SEATBELT", 0),
     ("WHEEL_SPEED_FL", "WHEEL_SPEED", 0),
     ("WHEEL_SPEED_FR", "WHEEL_SPEED", 0),
     ("WHEEL_SPEED_RL", "WHEEL_SPEED", 0),
@@ -32,7 +32,6 @@ def get_powertrain_can_parser(CP):
     ("PASSENGER_DOOR", "DOORS", 1),
     ("REAR_PASSENGER_DRIVER", "DOORS", 1),
     ("REAR_PASSENGER_PASSENGER", "DOORS", 1),
-    ("Units", "Dash_State", 1),
     ("CRUISE_ON", "CRUISE_CONTROL", 0)
   ]
 
