@@ -21,7 +21,7 @@ class ECU:
   CAM = 0
 
 ECU_FINGERPRINT = {
-  ECU.CAM: [290, 356],   # steer torque cmd
+  ECU.CAM: [257, 290, 356],   # it is not cruise control. steer torque cmd [290, 356]
 }
 
 DBC = {
