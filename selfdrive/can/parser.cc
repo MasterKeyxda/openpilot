@@ -93,7 +93,7 @@ bool MessageState::update_counter_generic(int64_t v, int cnt_size) {
   }
   return true;
 }
-
+/*
 void print_vector(std::vector<int> const &input) {
 	// specify a lambda expression
 	std::for_each(input.begin(),
@@ -108,7 +108,7 @@ void print_vector(std::vector<int> const &input) {
 	// or specify a function
 	// std::for_each(input.begin(), input.end(), print);
 }
-
+*/
 
 CANParser::CANParser(int abus, const std::string& dbc_name,
           const std::vector<MessageParseOptions> &options,
@@ -136,8 +136,8 @@ CANParser::CANParser(int abus, const std::string& dbc_name,
       std::cout << "WE ARE INSIDE THE FOR LOOP" << std::endl; // Keyur added debug lines
       std::cout << "The MERCEDES address is " << dbc->msgs[i].address << std::endl;
       std::cout << "The SUBARU address is " << op.address << std::endl;
-      std::cout << "The options vector is" << std::endl;
-      print_vector(op)
+      // std::cout << "The options vector is" << std::endl;
+      // print_vector(op)
       if (dbc->msgs[i].address == op.address) {
         msg = &dbc->msgs[i];
         break;
