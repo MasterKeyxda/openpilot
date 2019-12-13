@@ -22,7 +22,7 @@ class CarInterface(CarInterfaceBase):
     self.CS = CarState(CP)
     self.VM = VehicleModel(CP)
     self.pt_cp = get_powertrain_can_parser(CP)
-    self.cam_cp = get_camera_can_parser(CP)
+    #self.cam_cp = get_camera_can_parser(CP)
 
     self.gas_pressed_prev = False
 
@@ -98,15 +98,16 @@ class CarInterface(CarInterfaceBase):
   # returns a car.CarState
   def update(self, c, can_strings):
     self.pt_cp.update_strings(can_strings)
-    self.cam_cp.update_strings(can_strings)
+    #self.cam_cp.update_strings(can_strings)
 
-    self.CS.update(self.pt_cp, self.cam_cp)
+    #self.CS.update(self.pt_cp, self.cam_cp)
+    self.CS.update(self.pt_cp, None)
 
     # create message
     ret = car.CarState.new_message()
 
-    ret.canValid = self.pt_cp.can_valid and self.cam_cp.can_valid
-
+    #ret.canValid = self.pt_cp.can_valid and self.cam_cp.can_valid
+    ret.canValid = self.pt_cp.can_valid 
     # speeds
     ret.vEgo = self.CS.v_ego
     ret.aEgo = self.CS.a_ego
