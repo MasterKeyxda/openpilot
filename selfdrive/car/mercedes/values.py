@@ -23,5 +23,5 @@ ECU_FINGERPRINT = {
 }
 
 DBC = {
-  CAR.ECLASS: dbc_dict('subaru_global_2017', None),
+  CAR.ECLASS: dbc_dict('mercedes_e350_2011_pre_final', None),
 }
