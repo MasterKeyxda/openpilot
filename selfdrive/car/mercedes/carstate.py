@@ -88,7 +88,8 @@ class CarState():
     self.v_wheel_rl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RL'] * CV.KPH_TO_MS
     self.v_wheel_rr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RR'] * CV.KPH_TO_MS
 
-    self.v_cruise_pcm = cp_cam.vl["ES_DashStatus"]['Cruise_Set_Speed']
+    #self.v_cruise_pcm = cp_cam.vl["ES_DashStatus"]['Cruise_Set_Speed']
+    
     # 1 = imperial, 6 = metric
     #if cp.vl["Dash_State"]['Units'] == 1:
     #  self.v_cruise_pcm *= CV.MPH_TO_KPH
@@ -110,7 +111,7 @@ class CarState():
     self.left_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_LEFT'] == 1
     self.right_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_RIGHT'] == 1
     self.seatbelt_unlatched = cp.vl["SEATBELT"]['DRIVER_BELT'] #true if the bit value is 1
-    self.steer_torque_driver = cp.vl["STEER_TORQUE"]['STEER_TORQUE']
+    self.steer_torque_driver = cp.vl["STEERING_1"]['STEER_TORQUE']
     self.acc_active = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] # Check with the bit value, true if 1
     self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] # Check with the bit value, true if 1
     self.steer_override = abs(self.steer_torque_driver) > STEER_THRESHOLD[self.car_fingerprint]
@@ -120,6 +121,6 @@ class CarState():
       cp.vl["DOORS"]['PASSENGER_DOOR'],
       cp.vl["DOORS"]['DRIVER_DOOR']])
 
-    self.es_distance_msg = copy.copy(cp_cam.vl["ES_Distance"])
-    self.es_lkas_msg = copy.copy(cp_cam.vl["ES_LKAS_State"])
+    #self.es_distance_msg = copy.copy(cp_cam.vl["ES_Distance"])
+    #self.es_lkas_msg = copy.copy(cp_cam.vl["ES_LKAS_State"])
     #self.turn_blinker_on = copy.copy(cp.vl["DRIVER_CONTROL"]) #Added by keyur
