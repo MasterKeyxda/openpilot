@@ -1,6 +1,6 @@
 #include <cassert>
 #include <cstring>
-#include <iostream>
+
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
@@ -118,7 +118,6 @@ CANParser::CANParser(int abus, const std::string& dbc_name,
 
     const Msg* msg = NULL;
     for (int i=0; i<dbc->num_msgs; i++) {
-      std::cout << "WE ARE INSIDE THE FOR LOOP" << std::endl;
       // fprintf('Inside FOR LOOP');
       // fprintf('num_messages = %d',dbc->num_msgs);
       if (dbc->msgs[i].address == op.address) {
