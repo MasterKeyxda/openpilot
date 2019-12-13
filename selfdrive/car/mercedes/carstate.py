@@ -88,11 +88,11 @@ class CarState():
     self.v_wheel_rl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RL'] * CV.KPH_TO_MS
     self.v_wheel_rr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RR'] * CV.KPH_TO_MS
 
-    #self.v_cruise_pcm = cp_cam.vl["ES_DashStatus"]['Cruise_Set_Speed']
+    self.v_cruise_pcm = cp_cam.vl["CRUISE_CONTROL_3"]['CRUISE_SET_UP_DOWN'] #orginally ["ES_DashStatus"]['Cruise_Set_Speed'] from sub
     
     # 1 = imperial, 6 = metric
-    #if cp.vl["Dash_State"]['Units'] == 1:
-    #  self.v_cruise_pcm *= CV.MPH_TO_KPH
+    if cp.vl["Dash_State"]['Units'] == 1:
+      self.v_cruise_pcm *= CV.MPH_TO_KPH
 
     v_wheel = (self.v_wheel_fl + self.v_wheel_fr + self.v_wheel_rl + self.v_wheel_rr) / 4.
     # Kalman filter, even though Hyundai raw wheel speed is heaviliy filtered by default
