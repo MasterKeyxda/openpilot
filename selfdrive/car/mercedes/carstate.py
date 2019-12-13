@@ -37,14 +37,10 @@ def get_powertrain_can_parser(CP):
   ]
 
   checks = [
-    # sig_address, frequency
-    ("BRAKE_2", 10),
-    ("WHEEL_SPEED", 50),
-    ("STEERING_1", 50),
-    ("DOORS", 10),
-    ("CRUISE_CONTROL", 10),
+    # sig_address, frequency:
+    ("DOORS", 1),
   ]
-
+  print ((DBC[CP.carFingerprint]['pt']))
   return CANParser(DBC[CP.carFingerprint]['pt'], signals, checks, 0)
 
 
