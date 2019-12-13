@@ -74,8 +74,8 @@ class CarState():
     self.v_ego = 0.
 
   def update(self, cp, cp_cam):
-    print(cp.vl["THROTTLE_1_RPM"]['THROTTLE_PEDAL_POSITION'])
-    self.pedal_gas = cp.vl["THROTTLE_1_RPM"]['THROTTLE_PEDAL_POSITION']
+    print(cp.vl["THROTTLE_1_RPM"]['THROTTLE_POSITION'])
+    self.pedal_gas = cp.vl["THROTTLE_1_RPM"]['THROTTLE_POSITION']
     self.brake_pressure = cp.vl["BRAKE_2"]['BRAKE_POSITION']
     self.user_gas_pressed = self.pedal_gas > 0
     self.brake_pressed = self.brake_pressure > 0
