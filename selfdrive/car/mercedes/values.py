@@ -19,9 +19,9 @@ class ECU:
   CAM = 0
 
 ECU_FINGERPRINT = {
-  ECU.CAM: [ 257, 69 ],   # steer torque cmd, driver controls / SUBARU STUFF
+  ECU.CAM: [ 257, 69, 290, 356],   # steer torque cmd, driver controls / SUBARU STUFF
 }
 
 DBC = {
-  CAR.ECLASS: dbc_dict('mercedes_e350_2011_pre_final', None),
+  CAR.ECLASS: dbc_dict('subaru_global_2017', None),
 }
