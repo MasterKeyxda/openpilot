@@ -75,7 +75,6 @@ kalmanOdometry: [8068, true, 0.]
 thumbnail: [8069, true, 0.2, 1]
 carEvents: [8070, true, 1., 1]
 carParams: [8071, true, 0.02, 1]
-
 testModel: [8040, false, 0.]
 testLiveLocation: [8045, false, 0.]
 testJoystick: [8056, false, 0.]

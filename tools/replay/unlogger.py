@@ -90,7 +90,6 @@ class UnloggerWorker(object):
       typ = msg.which()
       if typ not in pub_types:
         continue
-
       # **** special case certain message types ****
       if typ == "encodeIdx" and msg.encodeIdx.type == fullHEVC:
         # this assumes the encodeIdx always comes before the frame
@@ -311,7 +310,6 @@ def _get_address_mapping(args):
   non_services = set(address_mapping) - set(service_list)
   if non_services:
     print("WARNING: Unknown services {}".format(list(non_services)))
-
   return address_mapping
 
 def keyboard_controller_thread(q, route_start_time):
@@ -421,7 +419,6 @@ def main(argv):
 
     subprocesses["data"].start()
     subprocesses["control"].start()
-
     # Exit if any of the children die.
     def exit_if_children_dead(*_):
       for name, p in subprocesses.items():

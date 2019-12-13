@@ -152,7 +152,7 @@ def ui_thread(addr, frame_address):
       imgw.fill(0)
 
     sm.update()
-
+    print(sm['carState'])
     w = sm['controlsState'].lateralControlState.which()
     if w == 'lqrState':
       angle_steers_k = sm['controlsState'].lateralControlState.lqrState.steerAngle
@@ -225,7 +225,8 @@ def ui_thread(addr, frame_address):
     if HOR:
       screen.blit(draw_plots(plot_arr), (640+384, 0))
     else:
-      screen.blit(draw_plots(plot_arr), (0, 600))
+      #screen.blit(draw_plots(plot_arr), (0, 600))
+      pass
 
     pygame.surfarray.blit_array(cameraw_surface, imgw.swapaxes(0, 1))
     screen.blit(cameraw_surface, (320, 480))
