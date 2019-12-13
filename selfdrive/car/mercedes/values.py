@@ -19,7 +19,7 @@ class ECU:
   CAM = 0
 
 ECU_FINGERPRINT = {
-  ECU.CAM: [ 257, 69],   # steer torque cmd, driver controls / SUBARU STUFF
+  ECU.CAM: [257, 69],   # cruise control, driver controls 
 }
 
 DBC = {
