@@ -106,7 +106,7 @@ class CarState():
     self.a_ego = float(v_ego_x[1])
     self.standstill = self.v_ego_raw < 0.01
     print('---------------------------------HELP-----------------------')
-    print(any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
+    print(not any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
       cp.vl["DOORS"]['REAR_PASSENGER_PASSENGER'],
       cp.vl["DOORS"]['PASSENGER_DOOR'],
       cp.vl["DOORS"]['DRIVER_DOOR']]))
@@ -120,7 +120,7 @@ class CarState():
     self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] # Check with the bit value, true if 1
     self.steer_override = abs(self.steer_torque_driver) > STEER_THRESHOLD[self.car_fingerprint]
     self.angle_steers = cp.vl["STEERING_2"]['STEER_ANGLE']
-    self.door_open = any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
+    self.door_open = not all([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
       cp.vl["DOORS"]['REAR_PASSENGER_PASSENGER'],
       cp.vl["DOORS"]['PASSENGER_DOOR'],
       cp.vl["DOORS"]['DRIVER_DOOR']])
