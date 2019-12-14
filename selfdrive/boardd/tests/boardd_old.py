@@ -62,15 +62,20 @@ def __parse_can_buffer(dat):
   return ret
 
 def can_send_many(arr):
+  handle.controlWrite(0x40, 0xdc, SafetyModel.allOutput, 0, b'')
   snds = []
   for addr, _, dat, alt in arr:
+    #can_se print(addr)
+    #if addr < 0x80000000:  # only support 11 bit addr
     if addr < 0x800:  # only support 11 bit addr
+      #print(addr)
       snd = struct.pack("II", ((addr << 21) | 1), len(dat) | (alt << 4)) + dat
       snd = snd.ljust(0x10, b'\x00')
       snds.append(snd)
   while 1:
     try:
       handle.bulkWrite(3, b''.join(snds))
+      #print(b''.join(snds))
       break
     except (USBErrorIO, USBErrorOverflow):
       cloudlog.exception("CAN: BAD SEND MANY, RETRYING")
@@ -123,8 +128,10 @@ def boardd_mock_loop():
     snd_0 = len(list(filter(lambda x: x[-1] == 0, snd)))
     snd_1 = len(list(filter(lambda x: x[-1] == 1, snd)))
     snd_2 = len(list(filter(lambda x: x[-1] == 2, snd)))
-    can_send_many(snd)
-
+    can_send_many(snd) #this is original NEVER STARTS THE CAN STUFF
+    #x = can_list_to_can_capnp(snd, msgtype='can')
+    #sendcan.send(x.to_bytes())
+    
     # recv @ 100hz
     can_msgs = can_recv()
     got_0 = len(list(filter(lambda x: x[-1] == 0+0x80, can_msgs)))
@@ -133,6 +140,8 @@ def boardd_mock_loop():
     print("sent %3d (%3d/%3d/%3d) got %3d (%3d/%3d/%3d)" %
       (len(snd), snd_0, snd_1, snd_2, len(can_msgs), got_0, got_1, got_2))
     m = can_list_to_can_capnp(can_msgs, msgtype='sendcan')
+    #m = can_list_to_can_capnp(snd, msgtype='sendcan') keyuredit
+    #print(m)
     sendcan.send(m.to_bytes())
 
 def boardd_test_loop():

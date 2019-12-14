@@ -96,6 +96,7 @@ class UnloggerWorker(object):
         self._frame_id_lookup[
           msg.encodeIdx.frameId] = msg.encodeIdx.segmentNum, msg.encodeIdx.segmentId
         #print "encode", msg.encodeIdx.frameId, len(self._readahead), route_time
+        #print(msg)
       self._readahead.appendleft((typ, msg, route_time, cookie))
 
   def _send_logs(self, data_socket):
@@ -274,8 +275,9 @@ def unlogger_thread(command_address, forward_commands_address, data_address, run
       # Send message.
       try:
         send_funcs[typ](msg_bytes)
+        #print(msg_bytes)
       #except MultiplePublishersError:
-      #  del send_funcs[typ]
+        #del send_funcs[typ]
       except:
         None
 
