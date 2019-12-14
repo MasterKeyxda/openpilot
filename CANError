@@ -1,0 +1,113 @@
+Cruise Control                                                                                                                                                                                              
+0.0                                                                                                                                                                                                         
+Cruise Control                                                                                                                                                                                              
+1.0                                                                                                                                                                                                         
+{"event": "alert_add", "alert_type": "enable", "enabled": false, "ctx": {"dongle_id": "5857f6160f94ae01", "version": "0.6.6-release", "dirty": true, "is_eon": true}}
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+( logMonoTime = 225484253453,                      
+  thermal = (                                      
+    cpu0 = 570,                                    
+    cpu1 = 561,                                    
+    cpu2 = 577,                                    
+    cpu3 = 574,                                    
+    mem = 554,                                     
+    gpu = 535,                                     
+    bat = 33500,                                   
+    freeSpace = 0.93514872,                        
+    batteryPercent = 100,                          
+    batteryStatus = "Charging",                    
+    fanSpeed = 16384,                              
+    started = true,                                
+    usbOnline = true,                              
+    startedTs = 142874526297,                      
+    thermalStatus = green,                         
+    batteryCurrent = 10375,                        
+    batteryVoltage = 4336827,                      
+    chargingError = false,                         
+    chargingDisabled = false ),                    
+  valid = true )                                   
+{"event": "STATUS_PACKET", "count": 360, "health": {"health": {"voltage": 11999, "current": 92, "ignitionLine": true, "controlsAllowed": true, "gasInterceptorDetected": false, "startedSignalDetectedDepre$
+ated": false, "hasGps": false, "canSendErrs": 7537756, "canFwdErrs": 1570175, "gmlanSendErrs": 0, "hwType": "whitePanda", "fanSpeedRpm": 0, "usbPowerMode": "cdp", "ignitionCan": false, "safetyModel": "al$
+Output"}, "logMonoTime": 225482531057, "valid": true}, "location": {"flags": 55, "latitude": 37.40173639, "longitude": -122.08308533, "altitude": -8.0, "speed": 0.0, "bearing": 0.0, "accuracy": 4.0, "tim$
+stamp": 1576305030000, "source": "android", "verticalAccuracy": 0.0, "bearingAccuracy": 0.0, "speedAccuracy": 0.0}, "thermal": {"thermal": {"cpu0": 570, "cpu1": 561, "cpu2": 577, "cpu3": 574, "mem": 554, 
+"gpu": 535, "bat": 33500, "freeSpace": 0.9351487159729004, "batteryPercent": 100, "batteryStatus": "Charging", "fanSpeed": 16384, "started": true, "usbOnline": true, "startedTs": 142874526297, "thermalSt$
+tus": "green", "batteryCurrent": 10375, "batteryVoltage": 4336827, "chargingError": false, "chargingDisabled": false}, "logMonoTime": 225484253453, "valid": true}, "ctx": {"dongle_id": "5857f6160f94ae01"$
+ "version": "0.6.6-release", "dirty": true, "is_eon": true}}
+running thermald <Process(thermald, started)>                                                      
+   running logmessaged <Process(logmessaged, started)>                                                
+   running logcatd <Process(logcatd, started)>                                                        
+   running tombstoned <Process(tombstoned, started)>                                                  
+   running uploader <Process(uploader, started)>                                                      
+   running ui <Process(ui, started)>               
+   running updated <Process(updated, started)>                                                        
+   running pandad <Process(pandad, started)>                                                          
+   running controlsd <Process(controlsd, started)>                                                    
+   running plannerd <Process(plannerd, started)>                                                      
+   running loggerd <Process(loggerd, started)>                                                        
+   running sensord <Process(sensord, started)>                                                        
+   running radard <Process(radard, started)>                                                          
+   running calibrationd <Process(calibrationd, started)>                                              
+   running paramsd <Process(paramsd, started)>                                                        
+   running visiond <Process(visiond, started)>                                                        
+   running proclogd <Process(proclogd, started)>                                                      
+   running ubloxd <Process(ubloxd, started)>                                                          
+   running gpsd <Process(gpsd, started)>                                                              
+   running deleter <Process(deleter, started)>                                                        
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+{"event": "alert_add", "alert_type": "canError", "enabled": true, "ctx": {"dongle_id": "5857f6160f94ae01", "version": "0.6.6-release", "dirty": true, "is_eon": true}}
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+Cruise Control                                     
+1.0                                                
+Cruise Control                                     
+1.0                                                
+0                                                  
+
+
