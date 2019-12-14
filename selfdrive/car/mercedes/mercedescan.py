@@ -103,7 +103,7 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
       "STEER_TORQUE": apply_steer,
     }
     #values["Checksum"] = subaru_checksum(values)
-    values["Checksum"] = subaru_checksum(packer, values, 14)
+    values["Checksum"] = subaru_checksum(packer, values, 0x14)
   return packer.make_can_msg("STEERING_1", 0, values)
 """
 def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_step):
