@@ -39,7 +39,7 @@ def subaru_checksum(data):
 
 
 def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_step):
-
+  pass
   if car_fingerprint == CAR.ECLASS:
     #counts from 0 to 15 then back to 0 + 16 for enable bit
     idx = ((frame // steer_step) % 16)
@@ -54,7 +54,7 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
   return packer.make_can_msg("ES_LKAS", 0, values)
 
 def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_step):
-
+  pass
   if car_fingerprint == CAR.ECLASS:
     values = {}
     values["Checksum"] = subaru_checksum(0x322)
@@ -62,7 +62,7 @@ def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_st
   return packer.make_can_msg("ES_LKAS_State", 0, values)
 
 def create_es_distance(packer, es_distance_msg, pcm_cancel_cmd):
-
+  pass
   values = copy.copy(es_distance_msg)
   if pcm_cancel_cmd:
     values["Main"] = 1
@@ -72,7 +72,7 @@ def create_es_distance(packer, es_distance_msg, pcm_cancel_cmd):
   return packer.make_can_msg("ES_Distance", 0, values)
 
 def create_es_lkas(packer, es_lkas_msg, visual_alert, left_line, right_line):
-
+  pass
   values = copy.copy(es_lkas_msg)
   if visual_alert == VisualAlert.steerRequired:
     values["Keep_Hands_On_Wheel"] = 1
@@ -85,7 +85,7 @@ def create_es_lkas(packer, es_lkas_msg, visual_alert, left_line, right_line):
   return packer.make_can_msg("ES_LKAS_State", 0, values)
 
 def create_left_blinker(packer, turn_blinker_on, car_fingerprint):
-
+  pass
   if car_fingerprint == CAR.ECLASS:
     values = copy.copy(turn_blinker_on)
     values ["BLINKER_LEFT"] = 1
