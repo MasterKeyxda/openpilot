@@ -60,7 +60,7 @@ class CarController():
       can_sends.append(mercedescan.create_steering_control(self.packer, CS.CP.carFingerprint, apply_steer, frame, P.STEER_STEP))
 
       self.apply_steer_last = apply_steer
-
+    """
     if self.es_distance_cnt != CS.es_distance_msg["Counter"]:
       can_sends.append(mercedescan.create_es_distance(self.packer, CS.es_distance_msg, pcm_cancel_cmd))
       self.es_distance_cnt = CS.es_distance_msg["Counter"]
@@ -68,7 +68,7 @@ class CarController():
     if self.es_lkas_cnt != CS.es_lkas_msg["Counter"]:
       can_sends.append(mercedescan.create_es_lkas(self.packer, CS.es_lkas_msg, visual_alert, left_line, right_line))
       self.es_lkas_cnt = CS.es_lkas_msg["Counter"]
-    
+    """
     #can_sends.append(mercedescan.create_left_blinker(self.packer, CS.turn_blinker_on, CS.CP.car_fingerprint))
     #print(can_sends)
     return can_sends
