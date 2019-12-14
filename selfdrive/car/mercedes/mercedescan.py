@@ -11,6 +11,7 @@ def subaru_checksum(packer, values, addr):
 
 """
 def subaru_checksum(data):
+  print(data)
   checksum = 0xFF
   temp_chk = 0
   bit_sum = 0
@@ -50,7 +51,6 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
       "SET_1": 1
     }
     values["Checksum"] = subaru_checksum(values)
-
   return packer.make_can_msg("ES_LKAS", 0, values)
 
 def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_step):
