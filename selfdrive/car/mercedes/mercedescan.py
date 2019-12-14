@@ -92,18 +92,13 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
   #KEYUR EDITED FUNCTION
   if car_fingerprint == CAR.ECLASS:
     #counts from 0 to 15 then back to 0 + 16 for enable bit
-    print('--------------------HELP--------------------')
     idx = ((frame // steer_step) % 16)
-    print(apply_steer)
-    print(frame)
-    print(steer_step)
-    print(idx)
     values = {
       "COUNTER": idx,
       "STEER_TORQUE": apply_steer,
     }
     #values["Checksum"] = subaru_checksum(values)
-    values["CHECKSUM"] = subaru_checksum(packer, values, 0x14)
+    values["CHECKSUM"] = subaru_checksum(packer, values, 0x0e)
   return packer.make_can_msg("STEERING_1", 0, values)
 """
 def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_step):
