@@ -108,6 +108,8 @@ class CarState():
     print('---------------------------------HELP-----------------------')
     print(cp.vl["DOORS"]['DRIVER_DOOR'])
     print(cp.vl["DOORS"]['REAR_PASSENGER_PASSENGER'])
+    print(cp.vl["DOORS"]['PASSENGER_DOOR'])
+    print(cp.vl["DOORS"]['REAR_PASSENGER_DRIVER']
     self.prev_left_blinker_on = self.left_blinker_on
     self.prev_right_blinker_on = self.right_blinker_on
     self.left_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_LEFT'] == 1
