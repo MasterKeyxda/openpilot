@@ -88,7 +88,7 @@ class CarState():
     self.v_wheel_rl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RL'] * CV.KPH_TO_MS
     self.v_wheel_rr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RR'] * CV.KPH_TO_MS
 
-    self.v_cruise_pcm = cp_cam.vl["CRUISE_CONTROL_3"]['CRUISE_SET_UP_DOWN'] #orginally ["ES_DashStatus"]['Cruise_Set_Speed'] from sub
+    self.v_cruise_pcm = cp.vl["CRUISE_CONTROL_3"]['CRUISE_SET_UP_DOWN'] #orginally ["ES_DashStatus"]['Cruise_Set_Speed'] from sub
     
     # 1 = imperial, 6 = metric
     if cp.vl["Dash_State"]['Units'] == 1:
