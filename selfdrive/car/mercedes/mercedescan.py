@@ -39,8 +39,10 @@ def subaru_checksum(data):
 """
 def subaru_checksum(packer, values, addr):
   dat = packer.make_can_msg(addr, 0, values)[2]
+  print(dat)
   return (sum(dat[1:]) + (addr >> 8) + addr) & 0xff
 
+#def subaru_checksum(packer, values, addr):
 
 def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_step):
 
