@@ -82,10 +82,10 @@ class CarState():
     self.brake_pressed = self.brake_pressure > 0
     self.brake_lights = bool(self.brake_pressed)
 
-    self.v_wheel_fl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_FL'] * CV.KPH_TO_MS
-    self.v_wheel_fr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_FR'] * CV.KPH_TO_MS
-    self.v_wheel_rl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RL'] * CV.KPH_TO_MS
-    self.v_wheel_rr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RR'] * CV.KPH_TO_MS
+    self.v_wheel_fl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_FL']
+    self.v_wheel_fr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_FR']
+    self.v_wheel_rl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RL']
+    self.v_wheel_rr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RR']
 
     self.v_cruise_pcm = cp.vl["CRUISE_CONTROL_3"]['CRUISE_SET_UP_DOWN'] #orginally ["ES_DashStatus"]['Cruise_Set_Speed'] from sub
     
