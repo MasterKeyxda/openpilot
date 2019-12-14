@@ -32,6 +32,7 @@ def get_powertrain_can_parser(CP):
     ("PASSENGER_DOOR", "DOORS", 1),
     ("REAR_PASSENGER_DRIVER", "DOORS", 1),
     ("REAR_PASSENGER_PASSENGER", "DOORS", 1),
+    ("CRUISE_SET_UP_DOWN", "CRUISE_CONTROL_3", 1),
     ("CRUISE_ON", "CRUISE_CONTROL", 0)
   ]
 
