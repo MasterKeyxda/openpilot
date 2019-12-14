@@ -54,14 +54,16 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
       "LKAS_Request": 1 if apply_steer != 0 else 0,
       "SET_1": 1
     }
-    values["Checksum"] = subaru_checksum(values)
+    #values["Checksum"] = subaru_checksum(values)
+    values["Checksum"] = subaru_checksum(packer, values, 0x122)
   return packer.make_can_msg("ES_LKAS", 0, values)
 
 def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_step):
   
   if car_fingerprint == CAR.ECLASS:
     values = {}
-    values["Checksum"] = subaru_checksum(0x322)
+    #values["Checksum"] = subaru_checksum(0x322)
+    values["Checksum"] = subaru_checksum(packer, values, 0x322)
 
   return packer.make_can_msg("ES_LKAS_State", 0, values)
 
@@ -71,7 +73,8 @@ def create_es_distance(packer, es_distance_msg, pcm_cancel_cmd):
   if pcm_cancel_cmd:
     values["Main"] = 1
 
-  values["Checksum"] = subaru_checksum(values)
+  #values["Checksum"] = subaru_checksum(values)
+  values["Checksum"] = subaru_checksum(packer, values, 545)
 
   return packer.make_can_msg("ES_Distance", 0, values)
 
@@ -84,6 +87,7 @@ def create_es_lkas(packer, es_lkas_msg, visual_alert, left_line, right_line):
   values["LKAS_Left_Line_Visible"] = int(left_line)
   values["LKAS_Right_Line_Visible"] = int(right_line)
 
-  values["Checksum"] = subaru_checksum(values)
+  #values["Checksum"] = subaru_checksum(values)
+  values["Checksum"] = subaru_checksum(packer, values, 545)
 
   return packer.make_can_msg("ES_LKAS_State", 0, values)
