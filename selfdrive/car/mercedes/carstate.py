@@ -40,7 +40,7 @@ def get_powertrain_can_parser(CP):
     # sig_address, frequency:
     ("DOORS", 1),
   ]
-  print ((DBC[CP.carFingerprint]['pt']))
+  #print ((DBC[CP.carFingerprint]['pt']))
   return CANParser(DBC[CP.carFingerprint]['pt'], signals, checks, 0)
 
 
@@ -75,7 +75,6 @@ class CarState():
     self.v_ego = 0.
 
   def update(self, cp, cp_cam):
-    #print(cp.vl["THROTTLE_1_RPM"]['THROTTLE_POSITION'])
     self.pedal_gas = cp.vl["THROTTLE_1_RPM"]['THROTTLE_POSITION']
     self.brake_pressure = cp.vl["BRAKE_2"]['BRAKE_POSITION']
     self.user_gas_pressed = self.pedal_gas > 0
@@ -105,11 +104,7 @@ class CarState():
     self.v_ego = float(v_ego_x[0])
     self.a_ego = float(v_ego_x[1])
     self.standstill = self.v_ego_raw < 0.01
-    #print('---------------------------------HELP-----------------------')
-    #print(not any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
-    #  cp.vl["DOORS"]['REAR_PASSENGER_PASSENGER'],
-    #  cp.vl["DOORS"]['PASSENGER_DOOR'],
-    #  cp.vl["DOORS"]['DRIVER_DOOR']]))
+
     print('Cruise Control')
     print(cp.vl["CRUISE_CONTROL"]['CRUISE_ON'])
     self.prev_left_blinker_on = self.left_blinker_on
