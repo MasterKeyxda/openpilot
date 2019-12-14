@@ -106,10 +106,10 @@ class CarState():
     self.a_ego = float(v_ego_x[1])
     self.standstill = self.v_ego_raw < 0.01
     print('---------------------------------HELP-----------------------')
-    print(cp.vl["DOORS"]['DRIVER_DOOR'])
-    print(cp.vl["DOORS"]['REAR_PASSENGER_PASSENGER'])
-    print(cp.vl["DOORS"]['PASSENGER_DOOR'])
-    print(cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'])
+    print(any([cp.vl["DOORS"]['REAR_PASSENGER_DRIVER'],
+      cp.vl["DOORS"]['REAR_PASSENGER_PASSENGER'],
+      cp.vl["DOORS"]['PASSENGER_DOOR'],
+      cp.vl["DOORS"]['DRIVER_DOOR']]))
     self.prev_left_blinker_on = self.left_blinker_on
     self.prev_right_blinker_on = self.right_blinker_on
     self.left_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_LEFT'] == 1
