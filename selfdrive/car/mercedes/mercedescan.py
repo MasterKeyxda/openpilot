@@ -63,7 +63,7 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
     #values["Checksum"] = subaru_checksum(values)
     values["Checksum"] = subaru_checksum(packer, values, 0x122)
   return packer.make_can_msg("ES_LKAS", 0, values)
-
+"""
 def create_steering_status(packer, car_fingerprint, apply_steer, frame, steer_step):
   
   if car_fingerprint == CAR.ECLASS:
@@ -97,3 +97,4 @@ def create_es_lkas(packer, es_lkas_msg, visual_alert, left_line, right_line):
   values["Checksum"] = subaru_checksum(packer, values, 545)
 
   return packer.make_can_msg("ES_LKAS_State", 0, values)
+"""
