@@ -112,7 +112,7 @@ class CarState():
     self.prev_right_blinker_on = self.right_blinker_on
     self.left_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_LEFT'] == 1
     self.right_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_RIGHT'] == 1
-    self.seatbelt_unlatched = cp.vl["SEATBELT"]['DRIVER_BELT'] #true if the bit value is 1
+    self.seatbelt_unlatched = bool(cp.vl["SEATBELT"]['DRIVER_BELT']) #true if the bit value is 1
     self.steer_torque_driver = cp.vl["STEERING_1"]['STEER_TORQUE']
     self.acc_active = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] # Check with the bit value, true if 1
     self.main_on = cp.vl["CRUISE_CONTROL"]['CRUISE_ON'] # Check with the bit value, true if 1
