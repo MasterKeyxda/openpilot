@@ -81,9 +81,7 @@ class CarState():
     self.user_gas_pressed = self.pedal_gas > 0
     self.brake_pressed = self.brake_pressure > 0
     self.brake_lights = bool(self.brake_pressed)
-    print('---------------------------------HELP-----------------------')
-    #print(self.brake_pressed)
-
+    
     self.v_wheel_fl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_FL'] * CV.KPH_TO_MS
     self.v_wheel_fr = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_FR'] * CV.KPH_TO_MS
     self.v_wheel_rl = cp.vl["WHEEL_SPEED"]['WHEEL_SPEED_RL'] * CV.KPH_TO_MS
@@ -107,7 +105,8 @@ class CarState():
     self.v_ego = float(v_ego_x[0])
     self.a_ego = float(v_ego_x[1])
     self.standstill = self.v_ego_raw < 0.01
-
+    print('---------------------------------HELP-----------------------')
+    print(cp.vl["DOORS"]['DRIVER_DOOR'])
     self.prev_left_blinker_on = self.left_blinker_on
     self.prev_right_blinker_on = self.right_blinker_on
     self.left_blinker_on = cp.vl["DRIVER_CONTROL"]['BLINKER_LEFT'] == 1
