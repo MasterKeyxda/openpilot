@@ -53,6 +53,7 @@ def create_steering_control(packer, car_fingerprint, apply_steer, frame, steer_s
     print(apply_steer)
     print(frame)
     print(steer_step)
+    print(idx)
     values = {
       "Counter": idx,
       "LKAS_Output": apply_steer,
